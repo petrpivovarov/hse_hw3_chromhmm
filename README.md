@@ -58,12 +58,12 @@
 
 ![image](https://user-images.githubusercontent.com/115037034/230192201-e40faf0e-44d6-43ce-8c23-ad8540dd45a1.png)
 
-### 6-Weak enchancer
+### 6-Weak enhancer
 Характерная метка H3k36me3. Находится в RefSeqGene, RefSeqTES, попадает на экзоны.
 
 ![image](https://user-images.githubusercontent.com/115037034/230190696-708fd131-30e7-4fec-947d-44a8c4a5d8bb.png)
 
-### 7-Chromatine
+### 7-Heterochromatin
 Для состояния характерна одна метка H3k09me3. Приемущественно попадает в ядерную ламину, есть в RefSeqTES.
 
 ![image](https://user-images.githubusercontent.com/115037034/230188920-708e9fa6-d842-4ac6-a00f-fe3ffd7665a9.png)
@@ -73,7 +73,7 @@
 
 ![image](https://user-images.githubusercontent.com/115037034/230190247-5c06e77b-c127-4cf3-8a18-9fcc1625d9dc.png)
 
-### 9-Chromatine
+### 9-Heterochromatine
 H2az - характерная метка для состояния. В основном находится в ядерной ламине.
 
 ![image](https://user-images.githubusercontent.com/115037034/230193315-0d06f0b7-941d-4bd9-879e-7224a82816ff.png)
