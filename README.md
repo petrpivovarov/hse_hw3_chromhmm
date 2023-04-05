@@ -85,9 +85,34 @@ H2az - характерная метка для состояния. В осно�
 
 
 ## Бонус
+Код:
+```python
+state_names = ['1-Transcribed',
+               '2-Transcribed',
+               '3-Active_promoter',
+               '4-Weak_promoter',
+               '5-Weak_transcribed',
+               '6-Weak_enhancer',
+               '7-Heterochromatin',
+               '8-Repressed',
+               '9-Heterochromatin',
+               '10-Transcribed']
+lines = []
+with open('C:/Users/Петр/PycharmProjects/pythonProject2/venv/H1hESC_10_dense.bed', 'r') as old_file:
+    lines = old_file.readlines()
+
+for i in range(1, len(lines)):
+    current_line = lines[i].split(sep='\t')
+    current_line[3] = state_names[int(current_line[3]) - 1]
+    lines[i] = '\t'.join(current_line)
+
+with open('C:/Users/Петр/PycharmProjects/pythonProject2/venv/H1hESC_10_dense.bed', 'w') as new_file:
+    for line in lines:
+        new_file.write(line)
+```
 После переименования получаем такое:
 
 ![image](https://user-images.githubusercontent.com/115037034/230209384-20c0fd5f-c1e5-4a74-9aae-d26fedffa371.png) 
 
 Итоговый файл в виде архива, так как оригинал слишком большой
-[ссылка на файл]()
+[ссылка на файл](https://github.com/petrpivovarov/hse_hw3_chromhmm/blob/main/data/H1hESC_10_dense_new.rar)
